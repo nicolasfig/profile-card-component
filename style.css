@@ -1,0 +1,16 @@
+@import url(normalize.css);
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  width: 100%;
+  text-align: center;
+  position: inherit;
+  bottom: var(--s-8);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
