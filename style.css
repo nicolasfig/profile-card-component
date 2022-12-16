@@ -13,6 +13,7 @@
   /* Neutral */
 
   --dark-gray: hsl(0, 0%, 59%);
+  --white: hsl(0, 100%, 100%);
 
   /* Fonts */
 
@@ -31,6 +32,12 @@
   --s-64: 4rem;
   --s-80: 5rem;
 }
+body {
+  background: url(./images/bg-pattern-top.svg) left -30vh top -50vh no-repeat,
+    url(./images/bg-pattern-bottom.svg) right -30vh bottom -50vh no-repeat;
+  background-color: var(--dark-cyan);
+  font-family: var(--kumbh);
+}
 
 main {
   display: flex;
@@ -43,6 +50,22 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--white);
+  min-width: 350px;
+  min-height: 375px;
+  box-sizing: border-box;
+  border-radius: var(--s-16);
+}
+
+.card-banner img {
+  border-radius: var(--s-16) var(--s-16) 0 0;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 5px solid var(--white);
+  position: relative;
+  top: -54px;
 }
 
 .stats {
