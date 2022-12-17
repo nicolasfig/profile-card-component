@@ -62,8 +62,8 @@ p {
   flex-direction: column;
   align-items: center;
   background-color: var(--white);
-  min-width: 350px;
-  min-height: 375px;
+  width: 350px;
+  height: 375px;
   box-sizing: border-box;
   border-radius: var(--s-16);
   box-shadow: 0 2px 20px 1px var(--dark-cyan);
@@ -134,4 +134,13 @@ p {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: 325px;
+  }
+  .card-banner img {
+    width: 325px;
+  }
 }
