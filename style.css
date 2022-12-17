@@ -13,6 +13,7 @@
   /* Neutral */
 
   --dark-gray: hsl(0, 0%, 59%);
+  --light-gray: hsl(0, 1%, 90%);
   --white: hsl(0, 100%, 100%);
 
   /* Fonts */
@@ -46,6 +47,16 @@ main {
   min-height: 100vh;
 }
 
+h1,
+h2 {
+  font-size: 18px;
+  color: var(--very-dark-desaturated-blue);
+  font-weight: var(--w-700);
+}
+
+p {
+  font-weight: var(--w-400);
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -55,6 +66,7 @@ main {
   min-height: 375px;
   box-sizing: border-box;
   border-radius: var(--s-16);
+  box-shadow: 0 2px 20px 1px var(--dark-cyan);
 }
 
 .card-banner img {
@@ -68,8 +80,45 @@ main {
   top: -54px;
 }
 
+.name {
+  margin-top: -30px;
+}
+
+.age {
+  color: var(--dark-gray);
+}
+
+.city {
+  margin-bottom: var(--s-16);
+  margin-top: var(--s-16);
+  color: var(--dark-gray);
+  font-size: 14px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--light-gray);
+  margin-bottom: var(--s-24);
+}
 .stats {
   display: flex;
+  justify-content: space-evenly;
+  min-width: 100%;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  font-size: 10px;
+  color: var(--dark-gray);
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 .attribution {
